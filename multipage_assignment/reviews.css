@@ -1,0 +1,42 @@
+body {
+font-family: Arial, sans-serif;
+color: #333;
+background-color: rgba(30, 150, 112, 0.1);
+}
+
+h1 {
+text-align: center;
+margin-top: 40px;
+}
+
+table {
+margin: 20px auto;
+border: 2px solid #black;
+}
+
+th, td {
+padding: 12px;
+font-size: 18px;
+border: 1px solid;
+}
+
+th {
+background-color: rgba(255, 255, 93, 0.4);
+}
+
+ul,ol {
+margin-left: 15px;
+font-size:18px;
+}
+
+.pros {
+color: green;
+}
+
+.cons {
+color: red;
+}
+
+.links{
+font-size:18px;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Quantum Computing</title>
+</head>
+
+<body>
+
+    <div class="allItems">
+        <header>
+            <h1 class="title">Quantum Computing</h1>
+        </header>
+        <main>
+            
+            <!-- sticks out when less than 1000 pixels in width, same for all pages -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="main.html">Overview of Quantum Computing</a></li>
+                    <li><a href="history.html">History of Quantum Computers</a></li>
+                    <li><a href="advantages_disadvantages.html">Advantages and Disadvantages</a></li>
+                    <li><a href="future_applications.html">Future of Quantum Computing and Applications</a></li>
+                    <li><a href="physics.html">Physics Concepts in Quantum Computing</a></li>
+                </ul>
+            </nav>
+
+
+            <article>
+                
+                <h3 class="subtitle">Introduction to Quantum Computing</h3>
+                <p>
+                    Quantum computing is a new field of computer science that harnesses the power of
+                    quantum mechanics to solve problems that are too complex for classical computers. Quantum computers
+                    use special units of information called qubits instead of bits that can exist in a superposition of
+                    two states, allowing them to perform multiple calculations at once. They also exploit other quantum
+                    phenomena such as entanglement and interference to speed up their operations, and have the potential
+                    to revolutionize many areas of science, and technology. For example, they can be used in
+                    cryptography, artificial intelligence, chemistry, physics, and simulations. However, building and
+                    programming quantum computers is a challenging task that requires overcoming many technical and
+                    theoretical obstacles, which is why they are not being used yet. In this website, you will learn
+                    more about the basics of quantum computing, its applications, and its future applications.
+                </p>
+                <br>
+
+                <h3 class="subtitle">Quantum Programming</h3>
+                <p>
+                    Quantum programming is the process of writing software for quantum computers. Quantum programming
+                    languages are used to write quantum algorithms that can only be executed on quantum computers.
+                    This is quite different from classical programming because quantum computers use qubits
+                    instead of bits, which exist in multiple states at once and allow quantum computers to
+                    perform multiple operations simultaneously. Quantum programming is still in its early stages, and
+                    few quantum programming languages are available. Most quantum scripts are run on simulations rather
+                    than actual quantum computers because of their high current operation cost.
+                </p>
+                <br>
+                <!-- descriptive images -->
+                <p><b>Example of a simple quantum circuit</b></p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Quantum_Toffoli_Gate_Implementation.svg/1920px-Quantum_Toffoli_Gate_Implementation.svg.png"
+                    width="750px" alt="picture of a quantum circuit">
+
+                <br>
+                <p><b>Representation of a Qubit</b></p>
+                <img src="https://devopedia.org/images/article/376/3669.1640606814.svg"
+                    width="750px" style="border-radius: 5px;" alt="diagram of qubit">
+
+                <br><br>
+                <!-- comparison of regular vs quantum computers -->
+                <h3 class="subtitle">Classical Computer vs Quantum Computers</h3>
+                <table>
+                    <tr>
+                        <th>Classical Computing</th>
+                        <th>Quantum Computing</th>
+                    </tr>
+                    <tr>
+                        <td>Used in computers today</td>
+                        <td>Used in quantum computers</td>
+                    </tr>
+                    <tr>
+                        <td>Based on classical physics</td>
+                        <td>Based on quantum mechanics</td>
+                    </tr>
+                    <tr>
+                        <td>Uses bits to represent data</td>
+                        <td>Uses qubits to represent data</td>
+                    </tr>
+                    <tr>
+                        <td>Can only be in one state at a time</td>
+                        <td>Can be in multiple states at the same time</td>
+                    </tr>
+                    <tr>
+                        <td>Limited by the speed of light</td>
+                        <td>Not limited by the speed of light (by entanglement)</td>
+                    </tr>
+                </table>
+                <br>
+
+                <!-- explanation of how quantum computers work -->
+                <h3 class="subtitle">How Quantum Computers Work</h3>
+                <ol>
+                    <li>Quantum bits (qubits) are used instead of classical bits.</li>
+                    <li>Qubits can exist in multiple states at once (superposition), which allows them to perform
+                        multiple operations simultaneously.</li>
+                    <li>As a result, there are many more possible states with qubits compared to regular bits.</li>
+                    <li>Qubits can be entangled with each other, meaning the state of one qubits depends on the state of
+                        another.</li>
+                    <li>As more qubits are entangled, the ability of the system to make calculations grows
+                        exponentially.</li>
+                </ol>
+                <br>
+
+                <!-- images for reference -->
+                <h3 class="subtitle">Example of a Quantum Computer</h3>
+                
+                <img src="https://www.science.org/do/10.1126/science.adh2923/full/_0224_quantumcomputing.jpg"
+                    height="340px" style="margin: 10px 15px 3px 32px; border-radius: 8px;" alt="picture of quantum computer">
+                <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fedc87bea-ea72-11ed-8b19-8262c49fff39.jpg?crop=3840%2C2160%2C0%2C0"
+                    height="340px" width="600px" style="margin: 10px 25px 3px 15px; border-radius: 8px;" alt="seocnd picture of quantum computer">
+
+
+            </article>
+
+
+        </main>
+
+
+        <footer>
+            <p>logo, contact info, other stuff</p>
+            <div style="text-align: right;">
+                <img src="logo.png" width="45px">
+            </div>
+        </footer>
+    </div>
+
+    <button onclick="toTop()" id="backToTop" title="Go to the top of the page">Back to Top</button>
+    <script src="helper.js"></script>
+</body>
+
+</html>

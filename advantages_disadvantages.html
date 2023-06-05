@@ -59,17 +59,19 @@
                     <tr>
                         <th>P: Polynomial Time</th>
                         <th>BQP: Bounded-error Quantum Polynomial time</th>
-                        <th>NP: Nondeterministic Polynomial time</th>
+                        <th>NP: Nondeterministic Polynomial Time</th>
                     </tr>
                     <tr>
                         <td>
                             <ul>
                                 <li>Can be solved efficiently (in polynomial time) by regular computers</li>
+                                <li>Examples include: Most linear programming questoins, checking is a number is prime,
+                                    and checking for connectivity in a graph</li>
                             </ul>
                         </td>
                         <td>
                             <ul>
-                                <li>Can be solved efficiently by quantum computers</li>
+                                <li><u>Can be solved efficiently by quantum computers</u></li>
                                 <li>Error probability must be less than 1/3</li>
                             </ul>
                         </td>
@@ -78,6 +80,8 @@
                                 <li>Solution to these problems can only be verified in polynomial time by regular
                                     computers</li>
                                 <li>Finding the solution to these problem cannot be done efficiently</li>
+                                <li>Examples include the Travelling Salesman Problem (traversing all nodes and returning
+                                    to start) and Boolean Satisfiability Problem.</li>
                             </ul>
                         </td>
                     </tr>
@@ -89,20 +93,62 @@
                     Polynomial time problems can be solve efficiently by quantum computers. The overlap between BQP and
                     NP means that quantum computers can solve some NP problems quickly (such as prime factorization).
                 </p>
-                <img>
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-51a68b43777993cd6eed13a943268507" height="300px"
+                    style="margin:25px">
 
-                <br><br>
 
-               
+                <h2 class="subtitle">Disadvantages</h2>
+                <table>
+                    <colgroup>
+                        <col style="background-color:rgb(224, 247, 255);">
+                        <col style="background-color:rgb(216, 255, 238);">
+                    </colgroup>
+
+                    <tr>
+                        <td>
+                            Accuracy of Calculations
+                        </td>
+                        <td>
+                            Since the state of qubits depends on probabilities, errors can occur during calculations.
+                            Error correction measures must be taken such as by using 'logical qubits', a group of
+                            physical qubits working together that correct errors as they occur. However, doing this will
+                            greatly increase the amount of qubits needed for the computer, thus increasing the cost.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Environmental Requirements
+                        </td>
+                        <td>
+                            Quantum computers must be cooled to extremely low temperatures (close to absolute zero) to
+                            ensure that environmental factors don't affect the quantum state of quantum computers. Once
+                            again, this will increase the cost of building and maintaining a quantum computer.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Quantum Algorithms
+                        </td>
+                        <td>
+                            Quantum computers cannot use the algorithms used on traditional computers, but need their
+                            own special algorithms. Creating and optimizing these algorithms can be very time consuming.
+                        </td>
+                    </tr>
+
+                </table>
+
             </article>
-
-
         </main>
 
 
         <footer>
-            <p>logo, contact info, other stuff</p>
-            <div style="text-align: right;">
+            <p><b>- First Name - Last Name - 2023</b></p><br>
+            <p><u>Contact Information</u></p><br>
+            <p>Email: person@gmail.com</p><br>
+            <p>Phone: 987-654-3210</p><br>
+            <div style="text-align: right; margin-right: 5px;">
                 <img src="logo.png" width="45px">
             </div>
         </footer>

@@ -9,7 +9,8 @@
 header {
     background-color: rgba(242, 247, 245, 0.674);
     border-style: solid;
-    border-color: rgb(76, 255, 56);
+    border-color: rgb(192, 198, 255);
+    border-width: 0.2rem;
     margin-bottom: 15px;
 }
 
@@ -34,8 +35,9 @@ nav {
     width: 15%;
     margin-right: 5px;
     border-style: solid;
-    border-color: rgb(175, 111, 111);
+    border-color: rgb(192, 198, 255);
     background-color: rgb(241, 241, 241);
+    border-width: 0.2rem;
     height: fit-content;
 }
 
@@ -74,8 +76,9 @@ li a:focus {
 article {
 
     border-style: solid;
-    border-color: rgb(227, 40, 252);
+    border-color: rgb(192, 198, 255);
     margin-left: 7px;
+    border-width: 0.2rem;
 }
 
 /* extra info goes here */
@@ -115,7 +118,7 @@ h1.title {
     font-family: Georgia;
     font-size: 2.5rem;
     font-weight: normal;
-    text-shadow: 0 0 0.4em rgb(255, 255, 255);
+    text-shadow: 0 0 0.2em rgb(149, 149, 149);
     text-align: center;
     top: 10%;
     left: 0;

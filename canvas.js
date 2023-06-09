@@ -1,6 +1,5 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-
 var offset = 0;
 
 function drawWave() {

@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <title>Quantum Computing</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
             <h1 class="title">Quantum Computing</h1>
         </header>
         <main>
-            
+
             <!-- sticks out when less than 1000 pixels in width, same for all pages -->
             <nav>
                 <ul class="navbar">
@@ -21,13 +22,13 @@
                     <li><a href="history.html">History of Quantum Computers</a></li>
                     <li><a href="advantages_disadvantages.html">Advantages and Disadvantages</a></li>
                     <li><a href="future_applications.html">Future of Quantum Computing and Applications</a></li>
-                    <li><a href="physics.html">Physics Concepts in Quantum Computing</a></li>
+                    <li><a href="others.html">Quantum Computing Quiz</a></li>
                 </ul>
             </nav>
 
 
             <article>
-                
+                <!-- intro -->
                 <h3 class="subtitle">Introduction to Quantum Computing</h3>
                 <p>
                     Quantum computing is a new field of computer science that harnesses the power of
@@ -40,9 +41,20 @@
                     programming quantum computers is a challenging task that requires overcoming many technical and
                     theoretical obstacles, which is why they are not being used yet. In this website, you will learn
                     more about the basics of quantum computing, its applications, and its future applications.
+                    <b>Hover over images to see its source.</b>
                 </p>
                 <br>
 
+                <!-- video on quantum computing -->
+                <h3 class="subtitle">Basics of Quantum Computing</h3>
+                <div style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jHoEjvuPoB8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <br>
+
+                <!-- quantum programming in more detail -->
                 <h3 class="subtitle">Quantum Programming</h3>
                 <p>
                     Quantum programming is the process of writing software for quantum computers. Quantum programming
@@ -54,15 +66,19 @@
                     than actual quantum computers because of their high current operation cost.
                 </p>
                 <br>
-                <!-- descriptive images -->
-                <p><b>Example of a simple quantum circuit</b></p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Quantum_Toffoli_Gate_Implementation.svg/1920px-Quantum_Toffoli_Gate_Implementation.svg.png"
-                    width="750px" alt="picture of a quantum circuit">
 
-                <br>
-                <p><b>Representation of a Qubit</b></p>
-                <img src="https://devopedia.org/images/article/376/3669.1640606814.svg"
-                    width="750px" style="border-radius: 5px;" alt="diagram of qubit">
+                <!-- descriptive images, hover over it for source -->
+                <div style="text-align: center;">
+                    <p class="image-description">Example of a simple quantum circuit</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Quantum_Toffoli_Gate_Implementation.svg/1920px-Quantum_Toffoli_Gate_Implementation.svg.png"
+                        width="750px" alt="picture of a quantum circuit" title="Source: wikepedia.com">
+
+                    <br><br>
+                    <p class="image-description">Representation of a Qubit</p>
+                    <img src="https://devopedia.org/images/article/376/3669.1640606814.svg" width="750px"
+                        style="border-radius: 5px; margin-left: 7px;" alt="diagram of qubit"
+                        title="Source: devopedia.org">
+                </div>
 
                 <br><br>
                 <!-- comparison of regular vs quantum computers -->
@@ -107,22 +123,25 @@
                     <li>As more qubits are entangled, the ability of the system to make calculations grows
                         exponentially.</li>
                 </ol>
+                <div id="chart"></div>
+                <script src="chart.js"></script>
                 <br>
 
                 <!-- images for reference -->
                 <h3 class="subtitle">Example of a Quantum Computer</h3>
-                
-                <img src="https://www.science.org/do/10.1126/science.adh2923/full/_0224_quantumcomputing.jpg"
-                    height="340px" style="margin: 10px 15px 3px 32px; border-radius: 8px;" alt="picture of quantum computer">
-                <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fedc87bea-ea72-11ed-8b19-8262c49fff39.jpg?crop=3840%2C2160%2C0%2C0"
-                    height="340px" width="600px" style="margin: 10px 25px 3px 15px; border-radius: 8px;" alt="second picture of quantum computer">
+                <div style="text-align: center;">
+                    <img src="https://www.science.org/do/10.1126/science.adh2923/full/_0224_quantumcomputing.jpg"
+                        height="340px" style="margin: 10px 15px 3px 32px; border-radius: 8px;"
+                        alt="picture of quantum computer" title="Source: www.science.org">
+                    <img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fedc87bea-ea72-11ed-8b19-8262c49fff39.jpg?crop=3840%2C2160%2C0%2C0"
+                        height="340px" width="600px" style="margin: 10px 25px 3px 15px; border-radius: 8px;"
+                        alt="second picture of quantum computer" title="Source: www.thetimes.co.uk">
+                </div>
 
 
             </article>
 
-
         </main>
-
 
         <footer>
             <p><b>- First Name - Last Name - 2023</b></p><br>

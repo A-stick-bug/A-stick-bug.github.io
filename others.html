@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Others</title>
+    <style>
+        body {
+            font: 20px arial;
+        }
+
+        .question {
+            text-decoration: underline;
+        }
+
+        .answers {
+            margin-bottom: 20px;
+        }
+
+        .answers label {
+            display: block;
+        }
+
+        #submit {
+            font-size: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="allItems">
+        <header>
+            <h1 class="title">Quantum Computing Quiz</h1>
+        </header>
+        <main>
+
+            <!-- sticks out when less than 1000 pixels in width, same for all pages -->
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Overview of Quantum Computing</a></li>
+                    <li><a href="history.html">History of Quantum Computers</a></li>
+                    <li><a href="advantages_disadvantages.html">Advantages and Disadvantages</a></li>
+                    <li><a href="future_applications.html">Future of Quantum Computing and Applications</a></li>
+                    <li><a href="others.html">Quantum Computing Quiz</a></li>
+                </ul>
+            </nav>
+
+
+            <article>
+                <!-- sine wave -->
+                <div style="text-align: center;">
+                <canvas id="myCanvas" height="100" width="1000" style="margin: 5px;"></canvas></div>
+                <script src="canvas.js"></script>
+
+                <!-- quiz -->
+                <h3 class="subtitle">Quantum Computing Quiz</h3>
+                <div style="margin: 12px;">
+                    <div id="quiz"></div>
+                    <button id="submit">Submit Quiz</button>
+                    <div id="results"></div>
+                </div>
+
+                <script src="quiz.js"></script>
+            </article>
+
+        </main>
+
+        <footer>
+            <p><b>- First Name - Last Name - 2023</b></p><br>
+            <p><u>Contact Information</u></p><br>
+            <p>Email: person@gmail.com</p><br>
+            <p>Phone: 987-654-3210</p><br>
+            <div style="text-align: right; margin-right: 5px;">
+                <img src="logo.png" width="45px">
+            </div>
+        </footer>
+    </div>
+
+    <button onclick="toTop()" id="backToTop" title="Go to the top of the page">Back to Top</button>
+    <script src="helper.js"></script>
+</body>
+
+</html>

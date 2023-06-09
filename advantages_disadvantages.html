@@ -19,18 +19,18 @@
         </header>
         <main>
 
-            <!-- sticks out when less than 1000 pixels in width -->
+            <!-- navigation bar, sticks out when less than 1000 pixels in width -->
             <nav>
                 <ul class="navbar">
                     <li><a href="index.html">Overview of Quantum Computing</a></li>
                     <li><a href="history.html">History of Quantum Computers</a></li>
                     <li><a href="advantages_disadvantages.html">Advantages and Disadvantages</a></li>
                     <li><a href="future_applications.html">Future of Quantum Computing and Applications</a></li>
-                    <li><a href="physics.html">Physics Concepts in Quantum Computing</a></li>
+                    <li><a href="others.html">Quantum Computing Quiz</a></li>
                 </ul>
             </nav>
 
-
+            <!-- main content -->
             <article>
                 <h2 class="subtitle">Advantages</h2>
                 <h3 class="subtitle">Simultaneous Operations</h3>
@@ -55,6 +55,8 @@
                     than regular computers such as finding the prime factors of large numbers (using Shor's algorithm).
                 </p>
                 <br>
+
+                <!-- P vs BQP vs NP table -->
                 <table>
                     <tr>
                         <th>P: Polynomial Time</th>
@@ -89,12 +91,15 @@
                 </table>
 
                 <br>
-                <p>In the diagram, overlapping areas represent problems in more than one category.<br> Eg. All
+                <p class="image-description" style="font-weight: normal;">In the diagram, overlapping areas represent
+                    problems in more than one category.<br> Eg. All
                     Polynomial time problems can be solve efficiently by quantum computers. The overlap between BQP and
                     NP means that quantum computers can solve some NP problems quickly (such as prime factorization).
                 </p>
-                <img src="https://qph.cf2.quoracdn.net/main-qimg-51a68b43777993cd6eed13a943268507" height="300px"
-                    style="margin:25px">
+                <div style="text-align: center;">
+                    <img src="https://qph.cf2.quoracdn.net/main-qimg-51a68b43777993cd6eed13a943268507" height="300px"
+                        style="margin:25px" title="Source: qph.cf2.quoracdn.net.com" alt="p vs np vs bqp">
+                </div>
 
 
                 <h2 class="subtitle">Disadvantages</h2>
@@ -104,6 +109,7 @@
                         <col style="background-color:rgb(216, 255, 238);">
                     </colgroup>
 
+                    <!-- table about the disadvantages of quantum computers -->
                     <tr>
                         <td>
                             Accuracy of Calculations
@@ -142,7 +148,7 @@
             </article>
         </main>
 
-
+        <!-- footer with extra info -->
         <footer>
             <p><b>- First Name - Last Name - 2023</b></p><br>
             <p><u>Contact Information</u></p><br>

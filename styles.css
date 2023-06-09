@@ -49,6 +49,7 @@ ul.navbar {
     width: 200px;
     background-color: #f1f1f1;
 }
+
 /* each individual button inside of the nav */
 li a {
     display: flex;
@@ -65,6 +66,7 @@ li a {
 
     margin: 5px 0px 5px 0px;
 }
+
 /* css animations for nav bar */
 li a:hover,
 li a:focus {
@@ -118,7 +120,7 @@ h1.title {
     font-family: Georgia;
     font-size: 2.5rem;
     font-weight: normal;
-    text-shadow: 0 0 0.2em rgb(149, 149, 149);
+    text-shadow: 0 0 0.14em rgb(149, 149, 149);
     text-align: center;
     top: 10%;
     left: 0;
@@ -175,7 +177,44 @@ h3.subtitle {
     border-radius: 4px;
     transition: all 0.3s ease-out;
 }
+
 /* animations for the buttom */
 #backToTop:hover {
     background-color: #000000;
+}
+
+/* css style for lists */
+ol {
+    padding: 0;
+    list-style: none;
+    counter-reset: circle_counter;
+}
+
+ol li {
+    counter-increment: circle_counter;
+    margin: 10px 12px;
+}
+
+ol li::before {
+    content: counter(circle_counter);
+    background-color: #00e1ff;
+    color: rgb(255, 255, 255);
+
+    font-size: 21px;
+    font-weight: bold;
+
+    margin-right: 6px;
+    padding: 3px 8px;
+    border-radius: 50%;
+}
+
+/* description of images */
+.image-description {
+    margin: 0 auto;
+    background-color: #e9e8e8;
+    padding: 7px;
+    border: 1px solid #cfcccc;
+    border-radius: 6px;
+    width: fit-content;
+    font-weight: bold;
 }
